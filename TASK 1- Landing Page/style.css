@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;600;700&family=Source+Code+Pro:wght@300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #FFE4C4;
+    font-family: 'Source Code Pro', monospace;   
+}
+
+.container{
+    width: 100%;
+    height: 80vh;
+    background-position: center;
+    padding-left: 4%;
+    padding-right: 8%;
+    box-sizing: border-box;
+}
+
+.container img{
+    height: 60%; 
+    float: left;
+   margin-right: 20px;  
+}
+
+.navbar{
+    height: 12%;
+    display: flex;
+    align-items: center;   
+}
+
+.logo{
+    width: 80px;
+    cursor: pointer;
+}
+
+.menu-icon{
+    width: 20px;
+    cursor: pointer;
+    margin: 40px;
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 400;
+    border: 0;
+    border-radius: 20px; 
+    padding: 10px;  
+}
+
+nav ul li a:hover{
+    background-color:#c17d2e ;
+}
+
+.row{
+    /* display: flex; */
+    padding-bottom: 100px;
+    height: 50%;
+    align-items: center; 
+}
+
+.col{
+    flex-basis: 50%;
+    padding-bottom: 50px;  
+}
+
+h1{
+    color: #A0522D;
+    font-size: 90px;
+}
+
+button{
+    width: 180px;
+    background-color: #A0522D;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 12px 0;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #c17d2e;
+  }
+
+.card{
+    width: 230px;
+    height: 400px;
+    display: inline-block;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 15px 25px;
+    cursor: pointer;
+    margin: 20px 25px;
+    background-position: center;
+    background-size: cover;
+    transition: tranform 0.5s;
+}
+
+.card1{
+background-image:url(Images/fruits.jpg);
+}
+.card2{
+background-image:url(Images/vegies.jpg);
+}
+.card3{
+background-image:url(Images/grocery.png);
+}
+.card4{
+background-image:url(Images/appliances.jpg);
+}
+
+.card:hover{
+    transform: translateY(-10px);
+}
+
+h4{
+    color: #A0522D;
+}
+
+.card p{
+    font-size: 10px;
+}
+
+footer{
+margin-top: 150px;
+text-align: center;
+font-weight: bold;
+
+}
+
