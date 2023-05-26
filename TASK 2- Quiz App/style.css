@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700&family=Source+Code+Pro:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    font-family: 'Exo+2', Verdana;
+    box-sizing: border-box;    
+}
+
+:root{
+    --hue-neutral: 200;
+    --hue-wrong: 0;
+    --hue-correct: 145;
+
+}
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-image:  url(images/bg.png);
+    background-position: center;
+    background-size: cover;
+}
+
+body.correct{
+    background-image: url(images/bg1.png);
+    background-position: center;
+    background-size: cover;
+}  
+
+body.wrong{
+    background-image:  url(images/bg2.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.container{
+    width: 600px;
+    max-width: 60%;
+    height: 400px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 0 0 10px 5px;
+    
+
+}
+
+.btn-grid{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 18px;
+    margin: 40px 10px;
+}
+
+.btn{
+    --hue: var(--hue-neutral);
+    border: 1px solid hsl(var(--hue),100%,30%);
+    background-color: hsl(var(--hue),100%,50%);
+    border-radius: 10px;
+    font-size: 30px;
+    padding: 5px 10px;
+    color: white;
+    outline: none;
+}
+
+.btn:hover{
+    border-color: black;
+}
+
+.btn.correct{
+    --hue: var(--hue-correct);
+    color: black;
+
+}
+.btn.wrong{
+    --hue:var(--hue-wrong);
+    color: black;
+}
+
+.start-btn, .next-btn{
+    font-size: 2.1rem;
+    font-weight: 600;
+    padding: 20px 40px;
+}
+
+.controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide{
+    display: none;
+}
