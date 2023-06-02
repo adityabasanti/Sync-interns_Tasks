@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script> -->
+    <link rel="stylesheet" href="style.css">
+    <title>Music Web App</title>
+</head>
+<body>
+
+    <audio src="" id="audio-source"></audio>
+
+    <!-- Home section -->
+    <section class="home-container">
+        <div class="top">
+            <img src="Images/cover 1.png" class="active">
+            <img src="Images/cover 2.png" class="active">
+            <img src="Images/cover 3.png" class="active">
+            <img src="Images/cover 4.png" class="active">
+            <img src="Images/cover 5.png" class="active">
+        </div>
+
+        <!-- Playlists -->
+        <h1 class="heading"></h1>Recently Played</h1>
+        <div class="playlists">
+            <div class="playlist-card">
+                <img src="Images/song 1.jpg" class="playlist">
+                <p class="playist-name">Song 1</p>
+            </div>
+            <div class="playlist-card">
+                <img src="Images/song 2.jpg" class="playlist">
+                <p class="playist-name">Song 2</p>
+            </div>
+            <div class="playlist-card">
+                <img src="Images/song 3.jpg" class="playlist">
+                <p class="playist-name">Song 3</p>
+            </div>
+            <div class="playlist-card">
+                <img src="Images/song 4.jpg" class="playlist">
+                <p class="playist-name">Song 4</p>
+            </div>
+            <div class="playlist-card">
+                <img src="Images/song 5.jpg" class="playlist">
+                <p class="playist-name">Song 5</p>
+            </div>          
+        </div>
+
+           <!-- Playlists  -->
+           <h1 class="heading1"></h1>Based on your listening</h1>
+           <div class="playlists">
+             <div class="playlist-card">
+                 <img src="Images/Playlist.png" class="playlist">
+                 <p class="playist-name">Made for You</p>
+             </div>
+             <div class="playlist-card">
+                 <img src="Images/podcasts.jpg" class="playlist">
+                 <p class="playist-name">Podcasts</p>
+             </div>
+             <div class="playlist-card">
+                 <img src="Images/EDM.png" class="playlist">
+                 <p class="playist-name">EDM</p>
+            </div>
+             <div class="playlist-card">
+                 <img src="Images/Lofi-beats.png" class="playlist">
+                 <p class="playist-name">Lofi & Chill</p>
+             </div>
+             <div class="playlist-card">
+                 <img src="Images/90's and 80's vibes.png" class="playlist">
+                 <p class="playist-name">old vibes</p>
+             </div>
+             <div class="playlist-card">
+                 <img src="Images/Remixes.png" class="playlist">
+                 <p class="playist-name">Top remixes</p>
+             </div>           
+             <div class="playlist-card">
+                 <img src="Images/Party.png" class="playlist">
+                 <p class="playist-name">Top remixes</p>
+             </div>           
+         </div>
+
+    </section>
+
+    <section class="music-player-section">
+
+        <img src="Images/back.svg" class="back-btn icon hide">
+        <img src="Images/nav.svg" class="nav-btn icon hide">
+
+        <h1 class="current-song-name">song 1</h1>
+        <p class="artist-name hide">artist 1</p>
+        <img src="Images/song 1.jpg" class="cover hide" alt="">
+        <div class="seek-bar">
+            <input type="range" class="music-seek-bar" value="0">
+            <p class="current-time hide">00 : 00</p>
+            <p class="duration hide">00 : 00</p>
+        </div>
+
+        <div class="controls">
+            <span class="fas fa-redo"></span>
+            <div class="main">
+                <i class="fas  fa-backward active"></i>
+                <i class="fas  fa-play active"></i>
+                <i class="fas  fa-pause"></i>
+                <i class="fas  fa-forward active"></i>
+            </div>
+            <input type="range" class="volume-slider" max="1" value="1" step="0.1">
+            <span class="fas fa-volume-up"></span>
+
+        </div>
+
+    </section>
+    
+
+    <section class="playlist-group">
+        <img src="Images/back.svg" class="back-btn icon">
+        <h1 class="title">playlist</h1>
+
+        <div class="queue active">
+            <div class="queue-cover">
+                <img src="Images/song 1.jpg" alt="">
+               <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">song 1</p>
+        </div><br>
+
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="Images/song 2.jpg" alt="">
+               <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">song 2</p>
+        </div><br>
+
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="Images/song 3.jpg" alt="">
+               <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">song 3</p>
+        </div><br>
+
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="Images/song 4.jpg" alt="">
+               <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">song 4</p>
+        </div><br>
+
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="Images/song 5.jpg" alt="">
+               <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">song 5</p>
+        </div>
+    </section>
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
