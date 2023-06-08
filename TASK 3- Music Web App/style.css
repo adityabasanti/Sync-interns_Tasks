@@ -2,9 +2,7 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    /* background-color: #FFE4C4; */
-       
+    box-sizing: border-box;      
 }
 
 :root{
@@ -29,8 +27,6 @@ body{
     background: var(--background);
     font-family: 'Inconsolata', monospace;
     color: var(--text-color);
-   
-
 }
 
 ::-webkit-scrollbar{

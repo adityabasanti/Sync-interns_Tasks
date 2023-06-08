@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+    <title>e-learning website</title>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <a href="#" class="logo"></a>
+        <img src="Images/logo1.png" alt="">
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#admin">Admin</a></li>
+            <li><a href="#docs">Docs</a></li>
+            <li><a href="#categories">Categories</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#about">AboutUs</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+
+    <!-- home section -->
+    <section class="home" id="home">
+        <div class="home-text">
+            <h5>Great online learning platform</h5>
+            <h1>Valuable online Courses for all</h1>
+            <p>!! Get ready for a new future of yourself !!</p>
+            <div class="latter">
+                <form>
+                <input type="email" placeholder="Enter your email">
+                <input type="password" placeholder="Enter your password">
+                <!-- <button type="submit">Let's Start</button> -->
+                <div class="main-btn">
+                    <a href="#" class="btn">Let's start</a>
+                </div>
+            </form>
+            </div>
+        </div>
+
+        <div class="home-img">
+            <img src="Images/home.svg" alt="">
+        </div>
+    </section>
+
+    <!-- Admin section -->
+    <section class="container" id="admin">
+        
+        <div class="center-text">
+            <h5>Admin Dashboard</h5>
+            <h2>Hello there!</h2>
+        </div>
+        
+        <div class="admin-content"></div>
+        <div class="container-box">
+            <img src="Images/con1.svg" alt="">
+            <p>Your Learning</p>
+        </div>
+
+        <div class="container-box">
+            <img src="Images/con2.svg" alt="">
+            <p>All Notes</p>
+        </div>
+
+        <div class="container-box">
+            <img src="Images/con3.svg" alt="">
+            <p>Earn certifications</p>
+        </div>
+
+        <div class="container-box">
+            <img src="Images/con4.svg" alt="">
+            <p>Online Assesments</p>
+        </div>
+    </div>
+
+        <div class="main-btn">
+            <a href="#" class="btn">Back To Home</a>
+        </div>
+    </section>
+
+    <!-- Upload doc section -->
+    <section class="upload-docs" id="docs">
+        <div class="center-text">
+            <h5>Upload Documnets</h5>        
+        </div>
+
+        <div class="doc-content">
+        <input type="file" id="fileInput">
+        <button onclick="uploadFile()">Upload</button>
+        </div>
+    </section>
+
+    <!-- start categories section -->
+    <section class="categories" id="categories">
+        <div class="center-text">
+            <h5>CATEGORIES</h5>
+            <h2>Top Categories</h2>
+        </div>
+
+        <div class="categories-content">
+            <div class="box">
+                <img src="Images/cate1.svg" alt="">
+                <h3>React Development</h3>
+                <p>5 courses</p>
+            </div>
+
+            <div class="box">
+                <img src="Images/cate2.svg" alt="">
+               
+                <h3>Python Development</h3>
+                <p>4 courses</p>
+            </div>
+
+            <div class="box">
+                <img src="Images/cate3.svg" alt="">             
+                <h3>Android Development</h3>
+                <p>5 courses</p>
+            </div>
+
+            <div class="box">
+                <img src="Images/cate4.svg" alt="">
+                <h3> UI/UX & Graphic Designing</h3>
+                <p>4 courses</p>
+            </div>
+        </div>
+
+        <div class="main-btn">
+            <a href="#" class="btn">All Categories</a>
+        </div>
+    </section>
+
+    <!--  courses section -->
+
+    <section class="courses" id="courses">
+        <div class="center-text">
+            <h5>COURSES</h5>
+            <h2>Explore Popular Courses</h2>
+        </div>
+
+        <div class="courses-content">
+            <div class="row">
+                <img src="Images/course1.png" alt="">
+                <div class="courses-text">
+                    <h5>₹499</h5>
+                    <h3>The complete HTML, CSS & JS course 2023</h3>
+                    <h6>08 hours 20 minutes</h6>
+                    <div class="rating">
+                        <div class="star">
+                            <iconify-icon icon="ic:sharp-star" style="color: gold;" width="24" height="24"></iconify-icon>
+                            <iconify-icon icon="ic:sharp-star" style="color: gold;" width="24" height="24"></iconify-icon>
+                            <iconify-icon icon="ic:sharp-star" style="color: gold;" width="24" height="24"></iconify-icon>
+                            <iconify-icon icon="ic:sharp-star" style="color: gold;" width="24" height="24"></iconify-icon>
+                            <iconify-icon icon="ic:sharp-star" style="color: gold;" width="24" height="24"></iconify-icon>
+                        </div>
+
+                        <div class="review">
+                            <p>{5 Reviews}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <img src="Images/course2.png" alt="">
+                <div class="courses-text">
+                    <h5>₹699</h5>
+                    <h3>The complete backend development course 2023</h3>
+                    <h6>06 hours 20 minutes</h6>
+                    <div class="rating">
+                        <div class="star">
+                            <iconify-icon icon="ic:sharp-star" style="color: gold;" width="24" height="24"></iconify-icon>
+                            <iconify-icon icon="ic:sharp-star" style="color: gold;" width="24" height="24"></iconify-icon>
+                            <iconify-icon icon="ic:sharp-star" style="color: gold;" width="24" height="24"></iconify-icon>
+                            <iconify-icon icon="ic:sharp-star" style="color: gold;" width="24" height="24"></iconify-icon>
+                            <iconify-icon icon="ic:sharp-star" style="color: gold;" width="24" height="24"></iconify-icon>
+                        </div>
+
+                        <div class="review">
+                            <p>{5 Reviews}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <img src="Images/course3.png" alt="">
+                <div class="courses-text">
+                    <h5>₹549</h5>
+                    <h3>The complete Python and Advanced python course 2023</h3>
+                    <h6>05 hours 15 minutes</h6>
+                    <div class="rating">
+                        <div class="star">
+                            <iconify-icon icon="ic:sharp-star" style="color: gold;" width="24" height="24"></iconify-icon>
+                            <iconify-icon icon="ic:sharp-star" style="color: gold;" width="24" height="24"></iconify-icon>
+                            <iconify-icon icon="ic:sharp-star" style="color: gold;" width="24" height="24"></iconify-icon>
+                            <iconify-icon icon="ic:sharp-star" style="color: gold;" width="24" height="24"></iconify-icon>
+                            <iconify-icon icon="ic:sharp-star" style="color: gold;" width="24" height="24"></iconify-icon>
+                        </div>
+
+                        <div class="review">
+                            <p>{5 Reviews}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <img src="Images/course4.png" alt="">
+                <div class="courses-text">
+                    <h5>₹699</h5>
+                    <h3>The complete AI and ML course 2023</h3>
+                    <h6>10 hours 30 minutes</h6>
+                    <div class="rating">
+                        <div class="star">
+                            <iconify-icon icon="ic:sharp-star" style="color: gold;" width="24" height="24"></iconify-icon>
+                            <iconify-icon icon="ic:sharp-star" style="color: gold;" width="24" height="24"></iconify-icon>
+                            <iconify-icon icon="ic:sharp-star" style="color: gold;" width="24" height="24"></iconify-icon>
+                            <iconify-icon icon="ic:sharp-star" style="color: gold;" width="24" height="24"></iconify-icon>
+                            <iconify-icon icon="ic:sharp-star" style="color: gold;" width="24" height="24"></iconify-icon>
+                        </div>
+
+                        <div class="review">
+                            <p>{5 Reviews}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <img src="Images/course5.png" alt="">
+                <div class="courses-text">
+                    <h5>₹499</h5>
+                    <h3>The complete web3 course 2023</h3>
+                    <h6>04 hours 10 minutes</h6>
+                    <div class="rating">
+                        <div class="star">
+                            <iconify-icon icon="ic:sharp-star" style="color: gold;" width="24" height="24"></iconify-icon>
+                            <iconify-icon icon="ic:sharp-star" style="color: gold;" width="24" height="24"></iconify-icon>
+                            <iconify-icon icon="ic:sharp-star" style="color: gold;" width="24" height="24"></iconify-icon>
+                            <iconify-icon icon="ic:sharp-star" style="color: gold;" width="24" height="24"></iconify-icon>
+                            <iconify-icon icon="ic:sharp-star" style="color: gold;" width="24" height="24"></iconify-icon>
+                        </div>
+
+                        <div class="review">
+                            <p>{5 Reviews}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <img src="Images/course6.png" alt="">
+                <div class="courses-text">
+                    <h5>₹499</h5>
+                    <h3>The complete graphic designing course 2023</h3>
+                    <h6>08 hours 20 minutes</h6>
+                    <div class="rating">
+                        <div class="star">
+                            <iconify-icon icon="ic:sharp-star" style="color: gold;" width="24" height="24"></iconify-icon>
+                            <iconify-icon icon="ic:sharp-star" style="color: gold;" width="24" height="24"></iconify-icon>
+                            <iconify-icon icon="ic:sharp-star" style="color: gold;" width="24" height="24"></iconify-icon>
+                            <iconify-icon icon="ic:sharp-star" style="color: gold;" width="24" height="24"></iconify-icon>
+                            <iconify-icon icon="ic:sharp-star" style="color: gold;" width="24" height="24"></iconify-icon>
+                        </div>
+
+                        <div class="review">
+                            <p>{5 Reviews}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-btn">
+            <a href="#" class="btn">Buy Now</a>
+        </div>
+    </section>
+
+    <!-- start cta section -->
+    <section class="cta">
+        <div class="center-text">
+            <h5>Trusted by</h5>
+            <h2>100+ Leading International Schools And Universities</h2>
+        </div>
+
+        <div class="cta-content">
+            <div class="cta-img">
+                <img src="Images/cta1.png" >
+            </div>
+
+            <div class="cta-img">
+                <img src="Images/cta2.png" >
+            </div>
+
+            <div class="cta-img">
+                <img src="Images/cta3.png" >
+            </div>
+
+            <div class="cta-img">
+                <img src="Images/cta4.png" >
+            </div>
+
+            <div class="cta-img">
+                <img src="Images/cta5.png" >
+            </div>
+
+            <div class="cta-img">
+                <img src="Images/cta6.png" >
+            </div>
+        </div>
+    </section>
+
+    <!--  about section -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="Images/aboutimg.svg" alt="">
+        </div>
+
+        <div class="about-text">
+            <h2>Do you wish to impart your knowledge? Assist us as a mentor.</h2>
+            <p> Enables learners to acquire new skills, deepen their knowledge, and pursue personal and professional growth, all while embracing the power of technology</p>
+            <h4>Best Courses</h4>
+            <h5>Top rated instructors</h5>
+            <a href="#" class="btn">Read More..</a>
+        </div>
+    </section>
+
+    <!-- contact section -->
+    <section class="contact" id="contact">
+        <div class="main-contact">
+            <div class="contact-content">
+                <img src="Images/logo.jpg">
+                <li><a href="#">FaceBook</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Twitter</a></li>
+            </div>
+
+            <div class="contact-content">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#admin">Admin</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#about">AboutUs</a></li>
+                <li><a href="#contact">Contact</a></li>               
+            </div>
+
+            <div class="contact-content">
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Register</a></li>
+                <li><a href="#">Instructor</a></li>
+                <li><a href="#">Dashboard</a></li>
+            </div>
+
+            <div class="contact-content">
+                <li><a href="#">San Diego, <br> California, CA 94249</a></li>
+                <li><a href="#">elearning@gmail.com</a></li>
+                <li><a href="#">1200578643</a></li>
+            </div>
+        </div>
+    </section>
+
+    <div class="last-text">
+        <p>© 2023 Aditya Basanti. E-Learning Website</p>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>

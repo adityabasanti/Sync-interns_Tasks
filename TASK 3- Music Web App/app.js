@@ -1,4 +1,3 @@
-///top///
 
 // navigations //
 const musicPlayerSection = document.querySelector('.music-player-section');
